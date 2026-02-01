@@ -14,11 +14,11 @@ The codebase is organized into functional modules corresponding to different sta
 | Folder / File | Description |
 | :--- | :--- |
 | **`postpreprocess/`** | **Data Refinement.** Post-processing scripts for fMRI data. |
-| └── `postProcess.py` | Main script for denoising, filtering, and preparing BOLD signals. |
+| └── `postpreprocess.py` | Main script for denoising, filtering, and preparing BOLD signals. |
 | **`individualized_network/`** | **Brain Mapping.** Implementation of individualized brain network construction. |
-| └── `my_iterative_code.py` | Core iterative algorithm to define person-specific functional boundaries. |
+| └── `iterative_code.py` | Core iterative algorithm to define person-specific functional boundaries. |
 | **`Analysis/`** | **Statistical Analysis.** Main results and figure generation. |
-| └── `main5.ipynb` | Jupyter Notebook for hierarchy calculations and cognitive correlation analysis. |
+| └── `main5_tacs.ipynb` | Jupyter Notebook for hierarchy calculations and cognitive correlation analysis. |
 | **`Plos_ref/`** | **Toolbox & Utilities.** Essential functions for data computation and handling. |
 
 ---
@@ -36,7 +36,7 @@ To replicate the results, follow this order:
 
 1.  **Preprocessing**: Run `postpreprocess/postpreprocess.py` to clean and refine the imaging data.
 2.  **Network Individualization**: Use `iterative_code.py` to generate individualized functional maps. This step is crucial for capturing person-specific variations in AD.
-3.  **Hierarchy Analysis**: Execute `main5.ipynb` to perform the functional gradient analysis and link neural changes to clinical cognitive scores.
+3.  **Hierarchy Analysis**: Execute `main5_tacs.ipynb` to perform the functional gradient analysis and link neural changes to clinical cognitive scores.
 
 > **Note**: All scripts rely on the utility functions in `Plos_ref/`. Ensure this directory is in your Python path or maintained in the root structure.
 
