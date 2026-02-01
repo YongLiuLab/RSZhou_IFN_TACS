@@ -65,5 +65,3 @@ If you use this code or find our research helpful, please cite our work:
   doi     = {10.21203/rs.3.rs-8184263/v1},
   note    = {Preprint}
 }
-## ✉️ Contact
-For questions regarding the code or data, please open an issue or contact the project lead.
